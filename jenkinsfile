@@ -1,0 +1,38 @@
+pipeline
+{
+	agent any
+	stages
+	{	
+		stage('Build')
+		{
+		   steps
+		   {
+			echo "Building the code..."
+			bat "mvn clean"
+		   }
+		}
+		stage('Test')
+		{
+		   steps
+		   {
+			echo "Testing the code..."
+			bat "mvn clean"
+		   }
+		}
+		stage('Compile')
+		{
+		   steps
+		   {
+			echo "Compiling the code..."
+			bat "mvn clean"
+		   }
+		}
+		stage('Deploy')
+		{
+		   steps
+		   {
+			echo "Deploying the code..."
+			bat "mvn clean"
+		   }
+		}
+}
